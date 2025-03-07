@@ -51,7 +51,6 @@ nav {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    height: 100vw;
 }
 
 .cardAbout {
@@ -59,12 +58,33 @@ nav {
     margin-top: 20%;
     justify-content: space-around;
     text-align: justify;
+    width: 100%;
 }
 
 .text {
     max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text h1 {
+    text-align: center;
+    font-size: 50px;
+} 
+
+.text i {
+    margin-top: 10px;
+    font-size: 50px;
 }
 
 .cardAbout img {
-    height: 300px;
+    height: 316px;
+}
+
+.social {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
