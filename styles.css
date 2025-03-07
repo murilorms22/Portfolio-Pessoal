@@ -92,7 +92,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    font-weight: 500;
 }
 
 .text h1 {
