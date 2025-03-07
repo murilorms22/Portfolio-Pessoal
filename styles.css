@@ -1,3 +1,8 @@
+:root {
+    --color-primary: rgb(100, 0, 166);
+    --color-secondary: rgba(51, 255, 0, 0.17);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,57 +11,78 @@
 }
 
 body {
-    background-color: rgb(215, 224, 233);
+    background-color: rgb(89, 76, 100);
 }
 
 header {
-    background-color: aliceblue;width: 80%;
+    background-color: aliceblue;
+    width: 80%;
     height: 124px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 15px 10px #75757535;
-    border-bottom: 1px rgba(0, 0, 0, 0.363) solid;
+    box-shadow: 0px 0px 15px 10px #0000004f;
+    border-bottom: 1px rgba(0, 0, 0, 0.192) solid;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    position: fixed;
-    top: -9%;
+    position: absolute;
+    top: -62px;
     left: 50%;
     transform: translate(-50%, 50%);
     width: 80%;
+
+    padding-inline: 130px;
 }
 
 header img{
     width: 80px;
-    margin: 20px;
+    height: 80px;
+    display: flex;
+    margin-top: 20px;
 }
 
 nav {
-    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 600px;
-    margin-right: 40px;
 
     font-weight: 600;
     font-size: 20px;
+}
 
+.lista-nav {
+    list-style-type: none; 
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
 }
 
 #container {
     background-color: aliceblue;
     max-width: 80%;
     display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    padding: 130px;
+    box-shadow: 0px 0px 15px 10px #0000004f;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-titulo {
+    text-align: center;
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: var(--color-primary);
 }
 
 .cardAbout {
     display: flex;
-    margin-top: 20%;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: justify;
     width: 100%;
 }
@@ -66,6 +92,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
 }
 
 .text h1 {
@@ -74,6 +101,10 @@ nav {
 } 
 
 .text i {
+    color: var(--color-primary);
+}
+
+i {
     margin-top: 10px;
     font-size: 50px;
 }
