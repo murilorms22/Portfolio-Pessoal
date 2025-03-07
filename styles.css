@@ -55,7 +55,7 @@ nav {
 .lista-nav {
     list-style-type: none; 
     display: flex;
-    width: 1000px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -72,12 +72,11 @@ nav {
     align-items: center;
 }
 
-.aboutme-titulo {
+.titulo {
     text-align: center;
     font-size: 90px;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 80px;
-    color: var(--color-primary);
 }
 
 .cardAbout {
@@ -111,6 +110,8 @@ i {
 
 .cardAbout img {
     height: 316px;
+    border: 3px solid var(--color-primary);
+    border-radius: 20px;
 }
 
 .social {
@@ -118,4 +119,49 @@ i {
     gap: 40px;
     align-items: center;
     justify-content: center;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cardProjeto {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    background-color: var(--color-primary);
+
+    border-radius: 20px;
+    border: 1px solid var(--color-primary);
+    color: white;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cardProjeto:hover {
+    transform: scale(105%);
+}
+
+.cardProjeto h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.cardProjeto img {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;  
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cardProjeto span {
+    font-weight: 500;
+    padding: 30px;
+    text-align: justify;
 }

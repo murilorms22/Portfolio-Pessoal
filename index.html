@@ -20,8 +20,8 @@
     <img src="./images/ms-logo.png" alt="Logo" />
     <nav>
       <ul class="lista-nav">
-        <li>Sobre mim</li>
-        <li>Projetos</li>
+        <a href="#sobremim-titulo"><li>Sobre mim</li></a>
+        <a href="#projetos-titulo"><li>Projetos</li></a>
         <li>Conhecimento</li>
         <li>Contato</li>
       </ul>
@@ -31,10 +31,10 @@
   <body>
     <div id="container">
       <div>
-        <h1 class="aboutme-titulo">ABOUT ME</h1>
+        <h1 class="titulo" id="sobremim-titulo">ABOUT ME</h1>
       </div>
       <div class="cardAbout">
-        <img src="./images/ms-logo.png" alt="Foto" />
+        <img src="./images/3x4.jpg" alt="Foto" />
         <div class="text">
           <h1>Murilo Silveira</h1>
           <span
@@ -51,14 +51,58 @@
             <a href="https://github.com/murilorms22" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/murilo-silveiraa/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/murilo-silveiraa/"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
-              
           </div>
         </div>
       </div>
-      <i class="fa-solid fa-arrow-down" style="margin-top: 100px; cursor: pointer;"></i>
+      <i
+        class="fa-solid fa-arrow-down"
+        style="margin-top: 100px; cursor: pointer"
+      ></i>
+
+      <h1 class="titulo" id="projetos-titulo">PROJETOS</h1>
+
+      <div class="projetos">
+        <div class="cardProjeto">
+          <h1>UserManager</h1>
+          <img src="./images/usermanager.png" alt="" />
+          <span
+            >O UserManager é uma simples tela para cadastro e exclusão de
+            usuários de um banco de dados. O projeto foi desenvolvido utilizando
+            ReactJS, com objetivo de aprofundar meus conhecimentos na
+            ferramenta. Além disso, também foi integrado MongoDB ao projeto para
+            estudar bancos de dados NoSQL e sua implementação em aplicações
+            web.</span
+          >
+        </div>
+
+        <div class="cardProjeto">
+          <h1>DevLinks</h1>
+          <img src="./images/devlinks.png" alt="" />
+          <span
+            >O DevLinks é um agregador de links para usar como cartão de visitas
+            online. Projeto desenvolvido a partir da trilha "DevLinks" ofertada
+            pela Rocketseat. Utilizei do projeto como forma de estudo para
+            relembrar conceitos importantes de CSS.</span
+          >
+        </div>
+
+        <div class="cardProjeto">
+          <h1>Portfólio</h1>
+          <img src="./images/portfolio.png" alt="" />
+          <span
+            >Portfólio criado para reunir projetos e algumas informações sobre
+            mim, além de servir como ferramenta de estudo. Neste projeto foi
+            utilizado ferramentas básicas como HTML, CSS e JavaScript, além de
+            bibliotecas como FontAwesome para utilização de ícones.</span
+          >
+        </div>
+      </div>
     </div>
   </body>
 </html>
