@@ -194,6 +194,11 @@ nav ul a:hover {
     color: white;
     
     font-size: 50px;
+    transition: 0.3s;
+}
+
+.text i:hover {
+    transform: scale(110%);
 }
 
 .social {
@@ -301,7 +306,7 @@ nav ul a:hover {
 .cardConhecimento p {
     text-align: justify;
     max-width: 70%;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 button.btn-scroll-top {
