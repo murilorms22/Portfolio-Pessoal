@@ -350,9 +350,35 @@ body h1 {
     font-family: rubik;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.piscando {
+    margin-top: 10px;
+    margin-left: 13px;
+    width: 4px;
+    border-radius: 1px;
+    height: 75px;
+    background-color: white;
+    animation: pisca 0.9s infinite;
+}
+
+.preta {
+    background-color: black;
+}
+
 @keyframes jump {
     0% { margin-bottom: 0px ;}
     50% { margin-bottom: 5px ;}
     100% { margin-bottom: 0px ;}
 
+}
+
+@keyframes pisca {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
