@@ -4,7 +4,7 @@
 }
 
 html {
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -39,11 +39,10 @@ header {
     padding-inline: 130px;
 }
 
-header img{
-    width: 80px;
-    height: 80px;
+header h1{
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+    font-size: 50px;
 }
 
 nav {
@@ -307,11 +306,11 @@ nav ul a:hover {
 
 button.btn-scroll-top {
     display: flex;
-    width: 70px;
-    height: 70px;
+    width: 3%;
+    height: 6%;
     position: fixed;
-    top: 90vh;
-    left: 92.5vw;
+    top: 91vh;
+    left: 93.2vw;
     z-index: 10;
 
     background-color: white;
@@ -321,29 +320,34 @@ button.btn-scroll-top {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0px 0px 5px 5px #0000004b;
-    transition: 0.5s;
+    transition: 0.1s ease;
     margin-right: 20px;
 }
 
+button.btn-scroll-top:hover {
+    transform: scale(120%);
+} 
+
+button.btn-scroll-top:hover i {
+    animation: jump 0.4s ease-in-out infinite;
+}
+
 button i {
-    font-size: 35px;
+    font-size: 250%;
     margin-top: 4px;
     color: var(--color-primary);
     scroll-behavior: smooth;
-}
-
-button.btn-scroll-top:hover {
-    border-radius: 10px;
-    width: 130px;
-    height: 50px;
-    left: 91vw;
-}
-
-aside {
-    border: 20px solid red;
+    transition: 0.4s;
 }
 
 body h1 {
     font-weight: 1000;
     font-family: rubik;
+}
+
+@keyframes jump {
+    0% { margin-bottom: 0px ;}
+    50% { margin-bottom: 5px ;}
+    100% { margin-bottom: 0px ;}
+
 }
