@@ -143,7 +143,7 @@ nav ul a:hover {
     left: -50%;
     right: -50%;
     z-index: -3;
-    transform: translateY(2400px);
+    transform: translateY(2550px);
 }
 
 .titulo {
@@ -253,13 +253,6 @@ nav ul a:hover {
     text-align: justify;
 }
 
-.fimCard {
-    display: flex;
-    margin-inline: auto;
-    width: 80%;
-    height: 0px;
-}
-
 #containerConhecimento h1 {
     margin-bottom: 20px;
 }
@@ -269,7 +262,7 @@ nav ul a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: auto;
     margin-top: 50px;
     border: 1px solid rgba(255, 255, 255, 0.508);
     border-radius: 10px;
@@ -279,7 +272,6 @@ nav ul a:hover {
 .cardConhecimento:hover {
     transform: scale(103%);
     background-color: rgba(0, 0, 0, 0.28);
-    cursor: pointer;
 }
 
 .cardConhecimento h1 {
@@ -307,6 +299,7 @@ nav ul a:hover {
     text-align: justify;
     max-width: 70%;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 button.btn-scroll-top {
