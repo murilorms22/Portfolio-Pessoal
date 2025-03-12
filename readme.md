@@ -7,7 +7,9 @@
 <p align="center">Preview do projeto finalizado :point_down:</p>
 
 <p align="center">
+    <a href="https://murilorms22.github.io/Portfolio-Pessoal/">
   <img alt="Portfolio" src="./images/Preview-portfólio.png" width="100%">
+    </a>
 </p>
 
 ## 🚀 Tecnologias
