@@ -1,6 +1,7 @@
 :root {
     --color-primary: rgb(100, 0, 166);
     --color-secondary: rgba(157, 89, 202, 0.559);
+    --color-notblack: rgba(31, 31, 31, 1)
 }
 
 html {
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-    background-color: rgb(89, 76, 100);
+    background-color: #ffffff;
 }
 
 header {
@@ -55,8 +56,11 @@ nav {
     font-size: 20px;
 }
 
-nav ul a {
+a {
     text-decoration: none;
+}
+
+nav ul a {
     color: black;
     transition: 0.2s;
 }
@@ -360,7 +364,45 @@ body h1 {
 }
 
 .preta {
-    background-color: black;
+    background-color: var(--color-notblack);
+}
+
+.conteudoContato {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cardContato {
+    border: 1px solid var(--color-notblack);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    color: var(--color-notblack);
+}
+
+.cardContato i {
+    font-size: 50px;
+}
+
+.cardContato:hover {
+    transform: scale(105%);
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.cor-titulo {
+    color: var(--color-notblack);
 }
 
 @keyframes jump {
