@@ -18,61 +18,67 @@
   </head>
   
   <header id="topo">
-    <h1 class="logo">< Murilo ></h1>
-    <nav>
-      <ul class="lista-nav">
-        <a href="#sobremim-titulo"><li>// sobre mim</li></a>
-        <a href="#projetos-titulo"><li>// projetos</li></a>
-        <a href="#conhecimento-titulo"><li>// conhecimento</li></a>
-        <a href="#contato-titulo"><li>// contato</li></a>
-      </ul>
-    </nav>
+    <div class="header-content">
+      <h1 class="logo">< Murilo ></h1>
+      <nav>
+        <ul class="lista-nav">
+          <a href="#sobremim-titulo"><li>// sobre mim</li></a>
+          <a href="#projetos-titulo"><li>// projetos</li></a>
+          <a href="#conhecimento-titulo"><li>// conhecimento</li></a>
+          <a href="#contato-titulo"><li>// contato</li></a>
+        </ul>
+      </nav>
+    </div>
   </header>
   
   <body>
-    <div id="containerAbout">
+    <div class="all">
+    <div  id="containerAbout">
       <div>
         <h1 class="titulo flex" id="sobremim-titulo">
           SOBRE MIM
           <div class="piscando"></div>
         </h1>
       </div>
-      <div class="cardAbout">
-        <img src="./images/3x4.jpg" alt="Foto" />
-        <div class="text">
-          <h1>Murilo Silveira</h1>
-          <h3>Front-end Developer</h3>
+      <div class="conteudoAbout">
+        <div class="cardAbout">
+          <img src="./images/3x4.jpg" alt="Foto" />
+          <div class="text">
+            <h1>Murilo Silveira</h1>
+            <h3>Front-end Developer</h3>
           <span
-            >Oi! Meu nome é Murilo, tenho 19 anos e estou ingressando na
-            carreira de programador. Atualmente faço faculdade de Sistemas para
+          >Oi! Meu nome é Murilo, tenho 19 anos e estou ingressando na
+          carreira de programador. Atualmente faço faculdade de Sistemas para
             Internet no IFSul Câmpus Pelotas no período noturno e crio projetos
             pessoais para me aperfeiçoar cada vez mais. Meus interesses dentro
             da programação são mais voltados para o front-end. Sou apaixonado
             por design há muito tempo e vi dentro da programação uma
             oportunidade de fazer o que gosto. Estou estudando CSS, JavaScript,
             ReactJS, Tailwind, entre outros.</span
-          >
-          <div class="social">
-            <a href="https://github.com/murilorms22" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
+            >
+            <div class="social">
+              <a href="https://github.com/murilorms22" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
               href="https://www.linkedin.com/in/murilo-silveiraa/"
               target="_blank"
-            >
+              >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    
     <div id="containerProjetos">
       <h1 class="titulo flex cor-titulo" id="projetos-titulo">
         PROJETOS
         <div class="piscando preta"></div>
       </h1>
 
-      <div class="projetos">
+      <div class="conteudoProjetos">
         <div class="cardProjeto">
           <h1>UserManager</h1>
           <img src="./images/usermanager.png" alt="" />
@@ -218,5 +224,6 @@
         <i class="fa-solid fa-chevron-up"></i></button
     ></a>
 
+  </div>
   </body>
 </html>
